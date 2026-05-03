@@ -5,6 +5,8 @@ export function myMiddleware(
     res: Response, 
     next: NextFunction
 ) {
+    req.user_id = "123456"
+    
     console.log("Passou pelo Middleware!")
 
     return next()
